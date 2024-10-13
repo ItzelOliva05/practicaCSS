@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claudia Itzel Oliva España</title>
+    <style>
+        body {
+            background-color: rgb(218, 255, 205);
+        }
+        h1{
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        form{
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid rgb(6, 0, 128);
+            background-color: rgb(133, 173, 173);
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="submit"]{
+            background-color: rgb(237, 186, 186);
+            color: rgb(65, 1, 53);
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Observación de Mapache</h1>
+    <form action="prac_CSS5.html" method="post" enctype="multipart/form-data">
+
+        <label for="nombre">Nombre del Observador</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="ubicacion">Ubicacion de la Observacion</label>
+        <input type="text" id="ubicacion" name="ubicacion">
+
+        <label for="Reacción">Reacción a la Presencia Humana</label>
+        <select id="Reacción" name="Reacción">
+            <option value="Curioso">Curioso</option>
+            <option value="Asustado">Asustado</option>
+        </select>
+
+        <label for="Tamaño">Tamaño Aproximado</label>
+        <input type="checkbox" id="Tamaño" name="Tamaño"> Pequeño
+        <input type="checkbox" id="Tamaño" name="Tamaño"> Mediano
+        <input type="checkbox" id="Tamaño" name="Tamaño"> Grande
+        <br><br>
+        <label>Color Pelaje:</label>
+        <input type="radio" id="gris" name="Color" value="gris">Gris
+        <input type="radio" id="marron" name="Color" value="marron">Marron
+        <input type="radio" id="negro" name="Color" value="negro">Negro
+        <br><br>
+        <input type="submit" value="Enviar Reporte">
+    </form>
+    <br><br>
+    <button onclick="history.back()">Anterior Pagina</button>
+    <a href="prac_CSS5.html">   
+        <button>Siguiente página</button>
+    </a>
+    
+</body>
+</html>
